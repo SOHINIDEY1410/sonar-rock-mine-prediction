@@ -1,44 +1,44 @@
-\# SONAR Rock vs Mine Prediction API
+SONAR Rock vs Mine Prediction API
 
 
 
-\## Project Description
+Project Description
 
 
 
-This project builds a \*\*Machine Learning model\*\* that predicts whether an object detected by SONAR signals is a \*\*Rock\*\* or a \*\*Mine\*\*.
+This project builds a Machine Learning model that predicts whether an object detected by SONAR signals is a Rock or a Mine.
 
 
 
-The model is trained using the \*\*SONAR dataset\*\* and deployed using \*\*FastAPI\*\*, allowing predictions to be made through an API.
+The model is trained using the SONAR dataset and deployed using FastAPI, allowing predictions to be made through an API.
 
 
 
-\---
 
 
 
-\## Technologies Used
+
+Technologies Used
 
 
 
-\* Python
+1.Python
 
-\* NumPy
+2. NumPy
 
-\* Scikit-learn
+3. Scikit-learn
 
-\* FastAPI
+4. FastAPI
 
-\* Uvicorn
-
-
-
-\---
+5. Uvicorn
 
 
 
-\## Project Structure
+
+
+
+
+Project Structure
 
 
 
@@ -48,43 +48,43 @@ sonar-project
 
 ├── main.py
 
-├── sonar\_model.sav
+├── sonar_model.sav
 
 ├── requirements.txt
 
-├── train\_model.ipynb
+├── SONAR.ipynb
 
 └── README.md
 
 
 
-\---
 
 
 
-\## How the Model Works
+
+How the Model Works
 
 
 
-1\. The dataset contains \*\*60 sonar signal values\*\*.
+1. The dataset contains 60 sonar signal values.
 
-2\. A \*\*Logistic Regression model\*\* is trained using Scikit-learn.
+2. A Logistic Regression model is trained using Scikit-learn.
 
-3\. The trained model is saved using \*\*pickle\*\* as `sonar\_model.sav`.
+3. The trained model is saved using pickle as `sonar_model.sav`.
 
-4\. FastAPI loads the saved model and provides a \*\*prediction API endpoint\*\*.
-
-
-
-\---
+4. FastAPI loads the saved model and provides a prediction API endpoint.
 
 
 
-\## How to Run the Project
 
 
 
-\### 1. Install dependencies
+
+ How to Run the Project
+
+
+
+ 1. Install dependencies
 
 
 
@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 
 
-\### 2. Start the FastAPI server
+ 2. Start the FastAPI server
 
 
 
@@ -100,7 +100,7 @@ uvicorn main:app --reload
 
 
 
-\### 3. Open API documentation
+ 3. Open API documentation
 
 
 
@@ -108,15 +108,15 @@ http://127.0.0.1:8000/docs
 
 
 
-\---
 
 
 
-\## Prediction
+
+ Prediction
 
 
 
-Send \*\*60 sonar values\*\* to the `/predict` endpoint.
+Send 60 sonar values to the `predict` endpoint.
 
 
 
@@ -124,17 +124,16 @@ The API will return:
 
 
 
-\* \*\*Rock\*\*
+Rock or
 
-\* \*\*Mine\*\*
-
-
-
-\---
+Mine
 
 
 
-\## Author
+
+
+
+Author
 
 
 
